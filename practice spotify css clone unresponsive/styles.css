@@ -1,0 +1,499 @@
+body {
+    color: #ccc;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 14px;
+    background: #5A3F37;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5A3F37, #2C7744); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.content {
+    display: flex;
+    height: 87vh;
+}
+
+.main {
+    display: flex;
+    flex-basis: 82%;
+}
+
+.left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+    margin-left: 15px;
+}
+
+.left button {
+    font-size: 20px;
+    background: #15db62;
+    border: none;
+    width: 175px;
+    height: 55px;;
+    border-radius: 200px;
+    color: #eee;
+    outline: none;
+    transition: all .5s ease-in-out;
+}
+
+.left button:hover{    
+    background: #0f9d46;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-basis: 70%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.albumcover {
+    height: 300px;
+    width: 300px;
+    margin-top: 35px;
+    -webkit-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.75);
+    background: black;
+}
+
+.albumcover img {
+    transition: all .5s ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+
+.albumcover img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+.albumcover i {
+    position: absolute;
+    top: 25%;
+    left: 31.5%;
+    border-radius: 50%;
+    font-size: 60px;
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+.albumcover:hover i {
+    transform: translate(-50%, -50%) scale(1.5);
+    transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+.albuminfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.albuminfo h1 {
+    color: white;
+}
+
+.albuminfo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.albuminfo a:hover {
+    color: white;
+}
+
+.albuminfo span {
+    letter-spacing: 3px;
+}
+
+.albuminfo div {
+    max-width: 75%;
+    text-align: center;
+}
+
+.artist-title {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.artist-title h3 {
+    font-weight: 300;
+    color: #f8f8f8;
+}
+
+.artist-title .duration span {
+    margin-right: 25px;
+    color: white;
+    letter-spacing: 3px;
+    display: none;
+}
+
+.artist-title:hover > .duration span {
+    display: block;
+}
+
+.artist-title .duration span:hover {
+    cursor: pointer;
+}
+
+.artist-title .duration {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.artist-title .duration i {
+    margin-right: 15px;
+}
+
+.artist-title p {
+    color: #999;
+}
+
+.artist-title p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+
+.artist-title:hover {
+    cursor: default;
+    background: #222;
+    opacity: 0.8;
+}
+
+.playlist {
+    width: 100%;
+    margin-top: 35px;
+}
+
+/* ======= */
+/* SIDENAV */
+/* ======= */
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 18%;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.75);
+    color: #bbb;
+    width: 100%;
+    height: 100%;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s ease-in-out;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+
+.sidenav-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav-top div {
+    margin-left: 20px;
+}
+
+.sidenav-top span {
+    letter-spacing: 3px;
+}
+
+.sidenav-bot div {
+    margin-left: 20px;
+}
+
+.sidenav-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidenav i {
+    font-size: 25px;
+}
+
+.sidenav hr {
+    width: 85%;
+    border: none;
+    height: 1px;
+    background-color: white;
+    opacity: 0.6;
+}
+
+.sidenav-logo {
+    margin-top: 34px;
+}
+
+.sidenav img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.sidenav p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.sidenav-bot {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav-install {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidenav-user {
+    color: #ccc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 85%;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidenav-user i {
+    margin-right: 20px;
+}
+
+.sidenav-search:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.sidenav-user:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.sidenav-install:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.75);
+    min-height: 13vh;
+    position: fixed;
+    background: #2a2a2a;
+    color: #b3b3b3;
+    align-items: center;
+}
+
+.footer-left {
+    margin-left: 18px;
+    width: 250px;
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+}
+
+.footer-left img {
+    width: 62.5px;
+    height: 62.5px;
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.75);
+}
+
+.footer-artist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-artist-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.footer-artist-info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-artist-info a:hover {
+    color: white;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
+
+.footer-artist-info p {
+    margin: 5px;
+}
+
+.footer-artist-info h4 {
+    margin: 5px;
+}
+
+.footer-left i {
+    margin-left: 15px;
+    font-size: 22px;
+    transition: all .2s ease-in-out;
+}
+
+.footer-left i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.footer-mid {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    align-items: center;
+}
+
+.footer-icons {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-icons i {
+    transition: all .2s ease-in-out;
+    font-size: 18px;
+}
+
+.footer-icons i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#lead {
+    font-size: 40px;
+}
+
+#lead:hover {
+    transform: scale(1.08);
+}
+
+.footer-bar {
+    max-height: 35px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.footer-bar .full-bar {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 100%;
+    background: #3b3b3b;
+    border-radius: 15px;
+    height: 5.5px;
+}
+
+.footer-bar .progress-bar {
+    width: 65%;
+    background: #ccc;
+    height: 5.5px;
+    border-radius: 15px;
+}
+
+.full-bar:hover {
+    cursor: pointer;
+}
+
+.full-bar:hover > .progress-bar {
+    background: #15db62;
+    cursor: pointer;
+}
+
+.footer-right {
+    width: 200px;
+}
+
+.footer-right i {
+    margin-left: 15px;
+    transition: all .2s ease-in-out;
+}
+
+.footer-right i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.vol-bar {
+    margin-left: 15px;
+    width: 100%;
+    background: #3b3b3b;
+    border-radius: 15px;
+    height: 5.5px;
+}
+
+.vol-progress {
+    width: 65%;
+    background: #ccc;
+    height: 5.5px;
+    border-radius: 15px;
+}
+
+.vol-bar:hover {
+    cursor: pointer;
+}
+
+.vol-bar:hover > .vol-progress {
+    background: #15db62;
+    cursor: pointer;
+}
+
+.footer-right {
+    margin-right: 35px;
+    display: flex;
+    flex: row;
+    align-items: center;
+}
+
+/* resp */
+/* sidenav, main / left-right, footer */
+
+@media (max-width: 600px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

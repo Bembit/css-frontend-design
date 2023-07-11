@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PhotoGallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+</head>
+<body>
+    <!-- BG VIDEO -->
+    <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+            <source src="Night-BBQ.mp4" type="video/mp4">
+            <source src="Night-BBQ.webm" type="video/webm">
+                Your browser is not supported. :(
+        </video>
+    </div>
+<!-- CARDS -->
+    <div class="row">
+        <div class="col-1-of-3">
+            <div class="card">
+                <div class="card__side card__side--front">
+                    <div class="card__picture card__picture--1">
+                        &nbsp;
+                    </div>
+                    <h4 class="card__heading">
+                        <span class="card__heading-span card__heading-span--1">this span is awesome</span>
+                    </h4>
+                    <div class="card__details">
+                        <ul>
+                            <li>#looksgoodinmybrowser</li>
+                            <li>#allthatmatter</li>
+                            <li>#mobilefirst? who?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-1">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                            <p class="card__price-only">to check comments and</p>
+                            <p class="card__price-value">see original</p>
+                            <p class="card__price-only">please click below</p>
+                        </div>
+                        <a href="#popup-1" class="btn btn-4">
+                            <span>Continue &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1-of-3">
+            <div class="card">
+                <div class="card__side card__side--front">
+                    <div class="card__picture card__picture--2">
+                        &nbsp;
+                    </div>
+                    <h4 class="card__heading">
+                        <span class="card__heading-span card__heading-span--2">two lines of stuff</span>
+                    </h4>
+                    <div class="card__details">
+                        <ul>
+                            <li>#looksgoodinmybrowser</li>
+                            <li>#allthatmatter</li>
+                            <li>#mobilefirst? who?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-2">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                            <p class="card__price-only">to check comments and</p>
+                            <p class="card__price-value">see original</p>
+                            <p class="card__price-only">please click below</p>
+                        </div>
+                        <a href="#popup-2" class="btn btn-4">
+                            <span>Continue &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1-of-3">
+            <div class="card">
+                <div class="card__side card__side--front">
+                    <div class="card__picture card__picture--3">
+                        &nbsp;
+                    </div>
+                    <h4 class="card__heading">
+                        <span class="card__heading-span card__heading-span--3">how long can this span be streched</span>
+                    </h4>
+                    <div class="card__details">
+                        <ul>
+                            <li>#looksgoodinmybrowser</li>
+                            <li>#allthatmatter</li>
+                            <li>#mobilefirst? who?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-3">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                            <p class="card__price-only">to check comments and</p>
+                            <p class="card__price-value">see original</p>
+                            <p class="card__price-only">please click below</p>
+                        </div>
+                            <a href="#popup-3" class="btn btn-4">
+                                <span>Continue &rarr;</span>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- POPUP -->
+    <div class="popup" id="popup-1">
+        <div class="popup__content popup__content__bg-1">
+            <div class="popup__left">
+                <img src="photo1.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#" class="popup__close">x</a>
+                <h2 class="popup__heading">Comments</h2>
+                <div class="popup__comments">
+                    <ul>
+                        <li>Amazing.</li>
+                        <li>Getting tired!</li>
+                        <li>Copypasting.</li>
+                        <li>These lines.</li>
+                        <li>3 times over.</li>
+                        <li>I'll finish this tomorrow.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-2">
+        <div class="popup__content popup__content__bg-2">
+            <div class="popup__left">
+                <img src="photo2.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#" class="popup__close">x</a>
+                <h2 class="popup__heading">Comments</h2>
+                <div class="popup__comments">
+                    <ul>
+                        <li>Amazing, love this city!</li>
+                        <li>Getting tired!</li>
+                        <li>And drunk!</li>
+                        <li>Whatever...</li>
+                        <li>Same thing different day!</li>
+                        <li>I'll finish this tomorrow.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-3">
+        <div class="popup__content popup__content__bg-3">
+            <div class="popup__left">
+                <img src="photo3.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#" class="popup__close">x</a>
+                <h2 class="popup__heading">Comments</h2>
+                <div class="popup__comments">
+                    <ul>
+                        <li>Amazing, love this city!</li>
+                        <li>Getting tired!</li>
+                        <li>And drunk!</li>
+                        <li>Whatever...</li>
+                        <li>Same thing different day!</li>
+                        <li>I'll finish this tomorrow.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

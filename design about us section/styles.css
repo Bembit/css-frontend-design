@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700|Questrial&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.faq h1 {
+    font-size: 8rem;
+    text-transform: lowercase;
+    font-weight: 700;
+    letter-spacing: -5px;
+    transition: all .3s ease-in-out;
+}
+
+.faq span {
+    color: #0af5ab;
+    margin-right: .5rem;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: #0af5ab;
+    transition: all .3s ease-in-out;
+}
+
+.faq hr {
+    border: none;
+    color: white;
+    background-color: white;
+    width: 50px;
+    height: 1.5px;
+    margin-right: 1rem;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.80),
+        rgba(0, 0, 0, 0.80)),
+        url(./alt-bg2.avif);
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.container .row {
+    display: flex;
+    flex-basis: 25%;
+    width: 100%;
+    padding: .25rem .5rem;
+}
+
+.container .row:nth-of-type(1) {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.container .row:nth-of-type(2) {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container .row:nth-of-type(3) {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.container .row:nth-of-type(4) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container .row .padding {
+    background-color: rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 30%;
+    transition: all .3s ease-in-out;
+}
+
+.container .row .social {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.08);
+    flex-basis: 75%;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+/* they are not siblings anymore */
+.container .row .padding:hover {
+    margin-right: 2rem; 
+    border-right: 1px solid rgba(10, 245, 171, 0.5);
+}
+
+.container .row .padding:hover + .social {
+    border-left: 1px solid rgba(10, 245, 171, 0.5);
+}
+
+.container .row .padding:hover h1 {
+    transform: translateX(2rem);
+}
+
+.container .row .padding:hover h2 {
+    transform: translate(2rem, 1rem);
+}
+
+.container .row .padding:hover hr {
+    transform: translate(2rem, 1rem);
+}
+
+.container .row .padding:hover + .social {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.container .row .padding:hover {
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+}
+
+.container .row .social .icons {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+i:not(:last-of-type) {
+    margin-bottom: .75rem;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.container .row .social .quote {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.container .row .social .quote p {
+    max-width: 275px;
+    text-align: left;
+    text-indent: 1rem;
+}
+
+.container .row .padding .top {
+    margin-left: 5rem;
+}
+
+.container .row .padding .bottom {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* arrows */
+
+.member-1 {
+    display: none;
+    position: absolute;
+    font-size: 5rem;
+    top: 25%;
+    left: 75%; 
+}
+
+.member-1-hover:hover + .member-1 {
+    display: block;
+}
+
+.member-2 {
+    display: none;
+    position: absolute;
+    font-size: 5rem;
+    top: 20%;
+    left: 60%; 
+}
+
+.member-2-hover:hover + .member-2 {
+    display: block;
+}
+
+.member-3 {
+    display: none;
+    position: absolute;
+    font-size: 5rem;
+    top: 30%;
+    left: 52%; 
+}
+
+.member-3-hover:hover + .member-3 {
+    display: block;
+}
+
+.member-4 {
+    display: none;
+    position: absolute;
+    font-size: 5rem;
+    top: 28%;
+    left: 66%; 
+}
+
+.member-4-hover:hover + .member-4 {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    section {
+        /* background-image: url('./bg-small.jpg'); */
+        background-position:  center center;
+        background-size: cover;
+    }
+    .container .row .padding {
+        flex-basis: 80%;
+    }
+    .container .row .social {
+        align-items: center;
+        justify-content: center;
+        flex-basis: 20%;
+    }
+    .container .row .social .quote p {
+        display: none;
+    }
+    .container .row .social .icons {
+        font-size: 3rem;
+    }
+    .faq h1 {
+        font-size: 6.5rem;
+    }
+    .faq h2 {
+        font-size: 1.7rem;
+    }
+    .faq hr {
+        width: 35px;
+    }
+    .container .row .padding .top {
+        margin-left: 1rem;
+    }
+    .container .row .padding .bottom {
+        margin-left: 1rem;
+    }
+    .container .row .padding:hover {
+        margin-right: 2rem; 
+        border-right: none;
+    }
+    .container .row .padding:hover + .social {
+        border-left: none;
+    }
+    .member-1-hover:hover + .member-1 {
+        display: none;
+    }
+    .member-2-hover:hover + .member-2 {
+        display: none;
+    }
+    .member-3-hover:hover + .member-3 {
+        display: none;
+    }
+    .member-4-hover:hover + .member-4 {
+        display: none;
+    }
+}

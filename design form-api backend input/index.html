@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="middle">
+        <div class="title">
+            <h1>Form<strong>Design</strong></h1>
+        </div>
+        <div class="form">
+            <form action="/api/photos/" method="POST" enctype="multipart/form-data">
+                <div class="row-spacing">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Image Name" required> 
+                </div>
+                <div class="row-spacing">
+                    <label for="tag"></label>
+                    <input type="text" name="tag" id="tag" placeholder="Image Tag" required>
+                </div>
+                <div class="col-spacing">
+                    <input class="inputfile" type="file" name="image" id="image" accept="image/*" onchange="loadFile(event)" required>
+                    <label for="image">Select Image <i class="fa fa-images"></i></label>
+
+                    <input class="" type="submit" value="Submit">
+                </div>          
+            </form>
+        </div>            
+        <div class="preview">
+            <img class="image-preview" id="output"/>
+        </div>                                  
+    </div>
+</body>
+    <script src="app.js"></script>
+</html>

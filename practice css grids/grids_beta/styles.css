@@ -1,0 +1,351 @@
+/* SETUP */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #222;
+    color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.45;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* COLORS AND VARIABLES */
+
+ /* #2998ff rgba(41, 152, 255, 0.65) */
+ /* #5643fa rgba(85, 67, 250, 0.65)*/
+
+/* GRID */
+
+.content {
+    padding: 3%;
+    flex: 1 1 80%;
+    min-height: 200vh;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(24, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 15px;
+}
+
+.portfolio-item {
+    background-color: orange;
+    /* display: flex; */
+}
+
+.portfolio-item.medium {
+    grid-row: span 4;
+    grid-column: span 4;
+}
+
+.portfolio-item.large {
+    grid-row: span 6;
+    grid-column: span 6;
+}
+
+.portfolio-item.small {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.portfolio-item.tall {
+    grid-row: span 6;
+    grid-column: span 4;
+}
+
+.portfolio-item.wide {
+    grid-row: span 4;
+    grid-column: span 6;
+}
+
+/* PHOTOS */
+
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 100%;
+    opacity: .92;
+}
+.card__side {
+    height: 100%;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+/*overflow: hidden;  to hide the overlapping image which is not rounded cornered. also cuts the bgackground blend for now. */ }
+.card__side--front {
+    background-color: #ffffff; }
+.card__side--back {
+    transform: rotateY(180deg);
+}
+/* FLIP ROTATE */
+/* X */
+.card__side--back-rotatex {
+    transform: rotateX(180deg);
+}
+.card:hover .card__side--front-rotatex {
+    transform: rotateX(-180deg);
+}
+.card:hover .card__side--back-rotatex {
+    transform: rotateX(0);
+}
+/* Y */
+.card__side--back-rotatey {
+    transform: rotateY(180deg);
+}
+.card:hover .card__side--front-rotatey {
+    transform: rotateY(-180deg);
+}
+.card:hover .card__side--back-rotatey {
+    transform: rotateY(0);
+}
+.card__side--back-1 {
+    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.65), rgba(85, 67, 250, 0.65)), url(photo1.jpg); 
+    background-size: 85rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.card__side--back-2 {
+    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.65), rgba(85, 67, 250, 0.65)), url(photo2.jpg);
+    background-size: 85rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.card__side--back-3 {
+    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.65), rgba(85, 67, 250, 0.65)), url(photo3.jpg);
+    background-size: 85rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+.card:hover .card__side--back {
+    transform: rotateY(0); }
+.card__picture {
+    background-size: cover;
+    background-blend-mode: screen;   
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.card-picture--small {
+    height: 65%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* last one to 0 85% */ 
+}
+.card-picture--medium {
+    height: 65%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* last one to 0 85% */ 
+}
+.card-picture--large {
+    height: 65%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* last one to 0 85% */ 
+}
+.card-picture--wide {
+    height: 65%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* last one to 0 85% */ 
+}
+.card__picture--1 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(photo1.jpg);
+}
+.card__picture--2 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(photo2.jpg);
+}
+.card__picture--3 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(photo3.jpg);
+}
+.card__heading {
+    text-transform: uppercase;
+    text-align: right;
+    color: #ffffff;
+    position: absolute;
+
+}
+.card__heading--small {
+    font-size: 1.5rem;
+    font-weight: 300;
+    top: 20rem;
+    right: 2rem;
+    width: 75%; 
+}
+.card__heading--medium {
+    font-size: 1.8rem;
+    font-weight: 300;
+    top: 20rem;
+    right: 2rem;
+    width: 75%; 
+}
+.card__heading--large {
+    font-size: 2.2rem;
+    font-weight: 300;
+    top: 20rem;
+    right: 2rem;
+    width: 75%; 
+}
+.card__heading--wide {
+    font-size: 2.8rem;
+    font-weight: 300;
+    top: 20rem;
+    right: 2rem;
+    width: 75%; 
+}
+.card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+.card__heading-span--1 {
+    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(85, 67, 250, 0.65)); }
+.card__heading-span--2 {
+    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(85, 67, 250, 0.65)); }
+.card__heading-span--3 {
+    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(85, 67, 250, 0.65)); }
+.card__details {
+    padding: 3rem; }
+.card__details ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto; }
+.card__details ul li {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem; }
+.card__details ul li:not(:last-child) {
+    border-bottom: 1px solid #eee; }
+.card__details-back ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto; }
+.card__details-back ul li {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+.card__details-back ul li:not(:last-child) {
+    border-bottom: 1px solid #eee; }
+.card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+/* to fix the buttons text break */
+    text-align: center; }
+.card__price-box {
+    margin-bottom: 8rem;
+    color: #ffffff; }
+.card__price-only {
+    font-size: 1.4rem;
+    /* text-transform: uppercase; */
+}
+.card__price-value {
+    font-size: 6rem;
+    font-weight: 400; }
+
+/* BUTTON */
+
+.btn {
+    padding: 10px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff; }
+  
+.btn-4 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none; }
+
+.btn-4 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.btn-4:before, .btn-4:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #ffffff;
+    transition: all 0.3s ease; }
+
+.btn-4:before {
+    height: 50%;
+    width: 2px; }
+
+.btn-4:after {
+    width: 20%;
+    height: 1.5px; }
+
+.btn-4:hover:before {
+    height: 100%; }
+
+.btn-4:hover:after {
+    width: 100%; }
+
+.btn-4 span:before, .btn-4 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #ffffff;
+    transition: all 0.3s ease; }
+
+.btn-4 span:before {
+    width: 2px;
+    height: 50%; }
+
+.btn-4 span:after {
+    width: 20%;
+    height: 2px; }
+
+.btn-4 span:hover:before {
+    height: 100%; }
+
+.btn-4 span:hover:after {
+    width: 100%; }

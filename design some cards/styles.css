@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+
+:root {
+	--black: #151515;
+	--white: #fff;
+	--grad-orange: #d58d31;
+	--grad-purple: #b929ce;
+	--grad-green: #1edc10;
+	--grad-teal: #29cec4;
+	--grad-violet: #8c5aff;
+	--grad-red: #d53131;
+	--grad-yellow: #ced91e;
+	--grad-pink: #ec3891;
+}
+
+* {
+	margin: 0 0;
+	padding: 0 0;
+	box-sizing: border-box;
+}
+  
+html {
+    font-size: 62.5%;
+}
+
+body {
+	color: var(--black);
+	background-color: var(--white);
+	font-family: 'Source Sans Pro', serif;
+	font-weight: 400;
+	padding: 2.5rem 2.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.card {
+    width: 600px;
+	height: 250px;
+	position: relative;
+}
+
+.wrapper {
+	filter: drop-shadow(-7px 7px 15px rgba(0, 0, 0, 0.25));
+}
+
+ /* span {
+	filter: drop-shadow(15px 25px 25px 25px black);
+} */
+
+.card:nth-of-type(n) {
+	margin-bottom: -2rem;
+}
+
+.card:nth-of-type(2n) {
+	margin-bottom: 2rem;
+}
+
+.card-container {
+    width: 700px;
+	height: 250px;
+	clip-path: polygon(0 0, 100% 5%, 90% 80%, 10% 95%);
+	background-image: linear-gradient(to bottom, var(--grad-orange), var(--grad-purple));
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	display: flex;
+	flex-direction: row;
+	color: var(--white);
+	box-shadow: 0px 1px 2px 0px black;
+}
+
+.card:nth-of-type(n) .card-container {
+	padding: 4rem 6rem;
+}
+
+.card:nth-of-type(2n) .card-container {
+	padding: 7rem 6rem;
+}
+
+.card-container div:first-of-type {
+	font-size: 12rem;
+	font-weight: 900;
+	display: flex;
+	align-content: flex-start;
+}
+
+.card:nth-of-type(2n) .card-container {
+	background-image: linear-gradient(to bottom, var(--grad-green), var(--grad-teal));
+	clip-path: polygon(10% 16.5%, 90% 0, 100% 100%, 0 95%);
+}
+
+.card:nth-of-type(3n) .card-container {
+	background-image: linear-gradient(to bottom, var(--grad-violet), var(--grad-red));
+}
+
+.card:nth-of-type(4n) .card-container {
+	background-image: linear-gradient(to bottom, var(--grad-yellow), var(--grad-pink));
+}
+
+.card-absolute {
+    width: 650px;
+	height: 275px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	clip-path: polygon(0 0, 100% 5%, 90% 80%, 10% 95%);
+	background-color: var(--black);
+	z-index: 1;
+}
+
+.card:nth-of-type(2n) .card-absolute {
+	clip-path: polygon(10% 15%, 90% 0, 100% 100%, 0 95%);
+}
+
+.card .card-container h3 {
+	font-size: 2.6rem;
+}
+
+.card .card-container div:first-of-type {
+	margin-right: 2rem;
+}
+
+.card .card-container p {
+	font-size: 1.4rem;
+	font-weight: 500;
+}

@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #eee;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.85)),
+        url(../img/bg2.jpg);
+
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+
+    /* animation: move 40s ease;
+    overflow: hidden; */
+
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 77vh);
+}
+
+.header-hero {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-title {
+    backface-visibility: hidden;
+
+    margin-bottom: 60px;
+}
+
+.header-title .header-title-top {
+    display: block;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 35px;
+    animation: moveInBottom 1s ease-out;
+}
+
+.header-title .header-title-top span {
+    font-weight: 700;
+}
+
+.header-title .header-title-bottom {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    font-weight: 100;
+    animation: moveInTop 2s ease-out;
+    margin: 0 auto;
+}
+
+.hero-btn-div {
+    animation: moveInRight 1s ease-out;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    background: #eee;
+    padding: 15px 30px;
+    color: #333;
+    font-family: "Lato", "Arial", "Helvetica", sans-serif;
+    letter-spacing: 1.4px;
+    font-size: 18px;
+    border-radius: 6px;
+    text-shadow: 0 1px 1px #283D3B;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 1 ease-in-out;
+
+    animation-name: jiggle;
+    animation-delay: 6s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.btn:hover {
+    animation-play-state: paused;
+}
+
+.side-nav ul {
+    position: absolute;
+    top: 13.5%;
+    left: 2%;
+    height: 100%;
+}
+
+.side-nav ul li {
+    list-style: none;
+    border: .5px solid #eee;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    backface-visibility: hidden;
+    margin-bottom: 15px;
+    /* animation-fill-mode: backwards; */
+}
+
+.side-nav ul li a:link,
+.side-nav ul li a:visited {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 25px;
+}
+
+.side-nav ul li:hover {
+    background: #eee;
+    color: #333;
+    cursor: pointer;
+}
+
+/* animations */
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    80% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes jiggle {
+    48%, 62% {
+      transform: scale(1.0, 1.0)
+    }
+    50% {
+      transform: scale(1.1, 0.9)
+    }
+    56% {
+      transform: scale(0.9, 1.1) translate(0, -5px)
+    }
+    59% {
+      transform: scale(1.0, 1.0) translate(0, -3px)
+    }
+  }
+
+.animation-delay-1 {
+    animation: moveInRight 1s ease-out 2s;
+    animation-fill-mode: backwards;
+}
+
+.animation-delay-2 {
+    animation: moveInRight 1s ease-out 2.5s;
+    animation-fill-mode: backwards;
+}
+
+.animation-delay-3 {
+    animation: moveInRight 1s ease-out 3s;
+    animation-fill-mode: backwards;
+}
+
+.animation-delay-4 {
+    animation: moveInRight 1s ease-out 3.5s;
+    animation-fill-mode: backwards;
+}
+
+.animation-delay-5 {
+    animation: moveInRight 1s ease-out 4s;
+    animation-fill-mode: backwards;
+}
+
+/* kenburns */
+
+@-webkit-keyframes move {
+    0% {
+      -webkit-transform-origin: bottom left;
+      -moz-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+      -o-transform-origin: bottom left;
+      transform-origin: bottom left;
+      transform: scale(1.0);
+      -ms-transform: scale(1.0);
+      /* IE 9 */
+      
+      -webkit-transform: scale(1.0);
+      /* Safari and Chrome */
+      
+      -o-transform: scale(1.0);
+      /* Opera */
+      
+      -moz-transform: scale(1.0);
+      /* Firefox */
+    }
+    100% {
+      transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      /* IE 9 */
+      
+      -webkit-transform: scale(1.2);
+      /* Safari and Chrome */
+      
+      -o-transform: scale(1.2);
+      /* Opera */
+      
+      -moz-transform: scale(1.2);
+      /* Firefox */
+    }
+  }
+

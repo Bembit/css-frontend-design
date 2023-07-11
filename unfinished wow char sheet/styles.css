@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
+
+:root {
+ --white: #fff;
+ --light-grey: #f9f9f9;
+ --grey: #8f8f8f;
+ --dark: #333;
+ --darker: #151515;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-position: center top;
+    background-attachment: fixed;
+    max-height: 100vh;
+    background-color: var(--darker);
+    color: var(--white);
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    min-height: 5vh;
+    background-color: var(--dark);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.character-sheet {
+    width: 100vw;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.classes {
+    width: 50vw;
+    height: 10vh;
+    border-bottom: none;
+    display: flex;
+    background-color: var(--darker);
+    border-radius: 5px;
+}
+
+.classes ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.classes ul li {
+    display: flex;
+    align-items: center;
+}
+
+.classes img {
+    opacity: .8;
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+    transition: .3s ease-in-out;
+}
+
+.classes img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.sheet-wrapper {
+    border-radius: 5px;
+    background-color: var(--grey);
+    padding: .15rem .15rem;
+}
+
+.sheet {
+    margin-top: .15rem;
+    border-radius: 5px;
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+}
+
+.sheet div img {
+    background-color: var(--light-grey);
+    /* border: 1px solid var(--grey); */
+    transition: all .1s ease-in-out;
+}
+
+.sheet img:hover {
+    opacity: .65;
+    cursor: pointer;
+    background-color: rgb(90, 128, 233);
+}
+
+/* whole top section */
+
+.sheet-top {
+    display: flex;
+    height: 85%;
+    width: 100%;
+}
+
+/* char sheet left items */
+
+.sheet-left {
+    flex-basis: 10%;
+}
+
+/* middle part for character stats */
+
+.sheet-middle {
+    border-left: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+    border-radius: 5px;
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.statistics {
+    flex-basis: 50%;
+    border-right: 1px solid var(--grey);
+    display: flex;
+    flex-direction: column;
+    padding: .1rem;
+    background-color: var(--light-grey);
+    border-radius: 5px;
+}
+
+.heading {
+    flex-basis: 10%;
+    /* border: 1px solid white; */
+    background-color: var(--darker);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.stats {
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    flex-basis: 90%;
+    background-color: var(--darker);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.stats div {
+    flex-basis: 25%;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+}
+
+.instance {
+    flex-basis: 50%;
+}
+
+/* char sheet right items */
+
+.sheet-right {
+    flex-basis: 10%;
+}
+
+/* left and right item slots ul */
+
+.sheet-left ul,
+.sheet-right ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sheet-left ul li,
+.sheet-right ul li {
+    display: flex;
+    justify-content: center;
+}
+
+.sheet-left img,
+.sheet-right img {
+    transform: scale(1.2);
+    border-radius: 5px;
+    border: 1px solid var(--darker);
+}
+
+/* char sheet bottom items */
+
+.sheet-bot {
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    width: 100%;
+}
+
+.bot-left {
+    flex-basis: 50%;
+}
+
+.bot-support {
+    flex-basis: 15%;
+}
+
+.bot-left,
+.bot-right {
+    height: 100%;
+    width: 100%;
+}
+
+.bot-left ul,
+.bot-right ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bot-left ul li,
+.bot-right ul li {
+    display: flex;
+    align-items: center;
+}
+
+.bot-left img,
+.bot-right img {
+    transform: scale(1.2);
+    border-radius: 5px;
+    border: 1px solid var(--darker);
+}

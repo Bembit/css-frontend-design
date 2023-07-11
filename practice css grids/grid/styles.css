@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.45;
+    font-size: 14px;
+}
+
+.main-content {
+    padding: 3%;
+    flex: 1 1 80%;
+    min-height: 100vh;
+}
+
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.portfolio-item {
+    background-color: orange;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.portfolio-item.large {
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+.portfolio-item.small {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.portfolio-item.tall {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.portfolio-item.wide {
+    grid-row: span 2;
+    grid-column: span 3;
+}

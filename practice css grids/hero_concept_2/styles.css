@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+}
+
+/* colors new
+    #333232
+    #ebebd3
+    #e3e3e3
+    #2e1c2b
+    #fff8f0
+    #6b717e
+    #ffe8e1
+    #e0e2db
+    #ede6f2
+    #eaeaea
+
+*/
+
+body {
+    background-color: #2e1c2b;
+    color: #e3e3e3;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.45;
+    font-size: 14px;
+    margin: 0 0;
+    padding: 0 0;
+    background-image: linear-gradient(to bottom, rgba(46, 28, 43, 0.73), rgba(46, 28, 43, 0.93)), url(bg.jpg);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+.hero {
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: .25%;
+    flex: 1 1 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    /* backface-visibility: hidden; */
+}
+
+.navigation {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: .5%;
+    margin-bottom: .5%;
+    width: 100%;
+    min-height: 8vh;
+    /* background-color: #2e1c2b;
+    -webkit-clip-path: polygon(100% 0, 99% 50%, 100% 100%, 0 100%, 1% 50%, 0 0);
+    clip-path: polygon(100% 0, 99% 50%, 100% 100%, 0 100%, 1% 50%, 0 0);
+    filter: drop-shadow(0 .15rem 2rem rgba(0,0,0,0.5)); */
+}
+.navigation a {
+    padding: .5rem;
+    color: #ede6f2;
+    text-decoration: none;
+    border-bottom: 1px solid #ede6f2;
+}
+
+.hero__title {
+    color: #ede6f2;
+    position: absolute;
+    top: 45;
+    left: 37.5%;
+    z-index: 1;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.825rem;
+    font-family: 'Lato';
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+.hero__title-span--primary {
+    font-family: 'Open Sans';
+    font-size: 6.5rem;
+    margin-bottom: 0.25385rem;
+    letter-spacing: 12px;
+    font-weight: 700;
+}
+.hero__title-span--secondary {
+    letter-spacing: 4px;
+    font-size: 1.16667rem;
+    margin-bottom: 1.41429rem;
+}
+
+.hero__background {
+    overflow: hidden;
+    min-height: 44vh;
+    /* background-image: url(bg.jpg); */
+    position: relative;
+    opacity: .9;
+    display: grid;
+    /* height: 100%; */
+    grid-template-rows: repeat(11, 1fr); /* 8-6-7 */
+    grid-template-columns: repeat(24, 1fr);
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
+    grid-column-gap: .2rem;
+    /* grid-row-gap: .1rem; */
+    /* filter: drop-shadow(0 .25rem .5rem rgba(0,0,0,0.5)); */
+    
+}
+
+.hero__background--clip-top {
+    background: linear-gradient(to bottom, #2e1c2b, #2e1c2b);
+    -webkit-clip-path: polygon(50% 0, 75% 25%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 25%);
+    clip-path: polygon(50% 0, 75% 25%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 25%);
+}
+/* .hero__background--clip-bot {
+    background: linear-gradient(to bottom, rgba(51, 50, 50, 1), rgba(0, 0, 0, 1));
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 75% 75%, 50% 100%, 25% 75%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 75% 75%, 50% 100%, 25% 75%, 0 100%, 0 0);
+} */
+
+.hero__column {
+    filter: grayscale(.15);
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .85;
+    transition: all .5s ease-in-out;
+    margin: -25px;
+    backface-visibility: hidden;
+}
+.hero__column:nth-child(odd) {
+    margin: 0px;
+}
+/* .hero__column:hover {
+    overflow: hidden;
+    margin: 0px;
+} */
+/* first row */
+.first__large {
+    grid-row: span 6;
+    grid-column: span 7;
+}
+
+.first__medium {
+    grid-row: span 6;
+    grid-column: span 4;
+}
+
+.first__small {
+    grid-row: span 6;
+    grid-column: span 3;
+}
+/* second row */
+.second__large {
+    grid-row: span 5;
+    grid-column: span 6;
+}
+
+.second__medium {
+    grid-row: span 5;
+    grid-column: span 5;
+}
+
+.second__small {
+    grid-row: span 5;
+    grid-column: span 3;
+}
+/* pics */
+.pic1 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/baby-3.jpg); */
+    background-image: url(funnybg.jpg); 
+    background-size: 30rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top center;
+}
+.pic2 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/fashion-2.jpg);  */
+    background-image: url(funnybg.jpg); 
+    background-size: 25rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: center;
+}
+.pic3 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/sights-2.jpg); */
+    background-image: url(funnybg.jpg); 
+    background-size: 30rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top center;
+}
+.pic4 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/portrait-1.jpg);  */
+    background-image: url(funnybg.jpg); 
+    background-size: 20rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top center;
+}
+.pic5 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/beauty-2.jpg); */
+    background-image: url(funnybg.jpg); 
+    background-size: 15rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top center;
+}
+.pic6 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/stereotype-1.jpg);  */
+    background-image: url(funnybg.jpg); 
+    background-size: 15rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top center;
+}
+.pic7 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/baby-1.jpg);  */
+    background-image: url(funnybg.jpg); 
+    background-size: 25rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top center;
+}
+.pic8 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/beauty-1.jpg);  */
+    background-image: url(funnybg.jpg); 
+    background-size: 25rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top center;
+}
+.pic9 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/wedding-1.jpg);  */
+    background-image: url(funnybg.jpg); 
+    background-size: 25rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top center;
+}
+.pic10 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/baby-4.jpg);  */
+    background-image: url(funnybg.jpg); 
+    background-size: 25rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top center;
+}
+.pic11 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/sights-1.jpg);  */
+    background-image: url(funnybg.jpg); 
+    background-size: 45rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: center;
+}
+.pic12 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/baby-2.jpg);  */
+    background-image: url(funnybg.jpg); 
+    background-size: 25rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: center;
+}
+.pic13 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/wedding-2.jpg);  */
+    background-image: url(funnybg.jpg); 
+    background-size: 35rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: center;
+}
+.pic14 {
+    /* background-size: cover; */
+    /* background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/fav.jpg);  */
+    background-image: url(funnybg.jpg); 
+    background-size: 15rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top center;
+}
+.pic15 {
+    /* background-size: cover; */
+    background-image: linear-gradient(to right bottom, var(--blue-light-transparent-light), var(--blue-dark-transparent-light)), url(images/fashion-1.jpg); 
+    background-image: url(funnybg.jpg); 
+    background-size: 15rem;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: normal;
+    background-position: top center;
+}
+
+.navigation
+
+
+:root {
+    --bg-color-primary: #f9f9f9;
+    --bg-color-secondary: #ffffff;
+    --font-color: #555;
+    --white: #ffffff;
+    --bg-icon: rgba(243, 204, 47, 0.7);
+
+    --blue-light: rgba(41, 152, 255, 1);
+    --blue-dark: rgba(85, 67, 250, 1);
+    --blue-light-transparent-light: rgba(41, 152, 255, 0.65);
+    --blue-dark-transparent-light: rgba(85, 67, 250, 0.65);
+    --blue-light-transparent-dark: rgba(41, 152, 255, 0.85);
+    --blue-dark-transparent-dark: rgba(85, 67, 250, 0.85);
+
+    --green-light: rgb(126, 213, 111);
+    --green-dark: rgb(40, 180, 133);
+    --green-light-transparent-light: rgba(126, 213, 111, 0.65);
+    --green-dark-transparent-light: rgba(40, 180, 133, 0.65);
+    --green-light-transparent-dark: rgba(126, 213, 111, 0.85);
+    --green-dark-transparent-dark: rgba(40, 180, 133, 0.85);
+
+    --orange-light: rgb(255, 185, 0);
+    --orange-dark: rgb(255, 119, 48);
+    --orange-light-transparent-light: rgba(255, 187, 0, 0.65);
+    --orange-dark-transparent-light: rgba(255, 120, 48, 0.65);
+    --orange-light-transparent-dark: rgba(255, 187, 0, 0.85);
+    --orange-dark-transparent-dark: rgba(255, 120, 48, 0.85);
+
+    --red-light: rgb(255, 51, 102);
+    --red-dark: rgb(186, 38, 93);
+    --red-light-transparent-light: rgba(255, 51, 102, 0.65);
+    --red-dark-transparent-light: rgba(186, 38, 92, 0.65);
+    --red-light-transparent-dark: rgba(255, 51, 102, 0.85);
+    --red-dark-transparent-dark: rgba(186, 38, 92, 0.85);
+
+    --yellow-light: rgb(243, 204, 47);
+    --yellow-dark: rgb(210, 170, 12);
+    --yellow-light-transparent-light: rgba(243, 204, 47, 0.65);
+    --yellow-dark-transparent-light: rgba(210, 170, 12, 0.65);
+    --yellow-light-transparent-dark: rgba(243, 204, 47, 0.85);
+    --yellow-dark-transparent-dark: rgba(210, 170, 12, 0.85);
+
+    --mono-light: rgb(44, 62, 80);
+    --mono-dark: rgb(32, 45, 58);
+    --mono-light-transparent-light: rgba(44, 62, 80, 0.65);
+    --mono-dark-transparent-light: rgba(32, 45, 58, 0.65);
+    --mono-light-transparent-dark: rgba(44, 62, 80, 0.85);
+    --mono-dark-transparent-dark: rgba(32, 45, 58, 0.85);
+/*mono  #1a252f  maybe??*/
+/*mono  #141c24  maybe??*/ 
+}
