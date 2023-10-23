@@ -1,6 +1,6 @@
 # css-frontend-design
 
-A few, CSS only designs.
+CSS designs and concepts done in one sitting / few hour sessions.
 
 <img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing11.png" width="1200">
 <img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing10.png" width="1200">
