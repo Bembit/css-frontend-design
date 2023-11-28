@@ -13,6 +13,7 @@ CSS designs and concepts done in one sitting / few hour sessions.
   <img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing14.png" width="48%">
   <img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing6.png" width="48%">
 </div>
+<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing21.png" width="100%">
 <br>
 <div>
   <img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing1.png" width="48%">
