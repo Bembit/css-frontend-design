@@ -3,7 +3,7 @@
 *I prefer layouts and colors. I used to just sit down and write some CSS because it's fun.*
 
 *No hero images with helvetica here.*
-*There are some in my old Photoshop repo <a href="https://github.com/Bembit/designs-photoshop">HELVETICA THIS WAY.</a>*
+*There are some in my old Photoshop repo. <a href="https://github.com/Bembit/designs-photoshop">Helvetica this way.</a>*
 
 #### <a href="/design%20print%20layout%20in%20css">Print layout / Magazine style.</a>
   - I really do love and miss quality print media.
@@ -34,14 +34,13 @@
   - Wish I used a better image.
 <img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing1.png" width="100%">
 
-<br>
+#### <a href="./sketches_and_practices_REST/">Just layouts, ideas.</a>
 <div>
-  <img src="./zzz/rest/2.png" width="24%">
-  <img src="./zzz/rest/4.png" width="24%">
-  <img src="./zzz/rest/1.png" width="24%">
-  <img src="./zzz/rest/9.png" width="24%">
+  <img src="./zzz/layouts/4.png" width="24%">
+  <img src="./zzz/layout.gif" width="24%">
+  <img src="./zzz/layouts/5.png" width="24%">
+  <img src="./zzz/layouts/7.png" width="24%">
 </div>
-<br>
 
 #### <a href="/design%20features%20section%20new">Social / Cards.</a>
   - Some social idea from whenever.
@@ -73,14 +72,6 @@
 <div>
   <img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing19.jpg" width="48%">
   <img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing20.jpg" width="48%">
-</div>
-
-#### <a href="./sketches_and_practices_REST/">Just layouts, ideas.</a>
-<div>
-  <img src="./zzz/layouts/4.png" width="24%">
-  <img src="./zzz/layouts/6.png" width="24%">
-  <img src="./zzz/layouts/5.png" width="24%">
-  <img src="./zzz/layouts/7.png" width="24%">
 </div>
 
 #### <a href="https://github.com/Bembit/designs-photoshop">Photoshop repo.</a>
