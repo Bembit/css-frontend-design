@@ -1,5 +1,5 @@
 /* General styles */
-/* main color : #8e44ad */
+/* main color : #da4b24 */
 
 * {
 	margin: 0;
@@ -32,7 +32,7 @@ a.btn {
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
-	background-color: #8e44ad;
+	background-color: #da4b24;
 	opacity: 1;
 }
 
@@ -53,7 +53,7 @@ section {
 hr {
 	width: 250px;
 	height: 3px;
-	background-color: #8e44ad;
+	background-color: #da4b24;
 	border: 0;
 	margin-bottom: 50px;
 }
@@ -144,7 +144,7 @@ header nav li {
 	height: 100%;
 	background-size: cover;
 	z-index: -1;
-	background-color: #8e44ad;
+	background-color: #da4b24;
 	background-attachment: fixed;
 	background-position: center;
 }
@@ -237,7 +237,7 @@ header nav li {
 }
 
 .packages .grid li i {
-	color: #8e44ad;
+	color: #da4b24;
 }
 
 .packages .grid li h4 {

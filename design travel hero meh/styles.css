@@ -8,7 +8,7 @@
     --light-grey: #f9f9f9;
     --grey: #f1f1f1;
     --dark-grey: #ececec;
-	--yellow: #f8c332;
+	--offcolor: #8ce6d1;
 	--comp: #25c7a2;
 	--blue: #1b96f1;;	
 	--red: #f5515f;
@@ -294,7 +294,7 @@ header {
 
 .cta-item-subtitle {
 	font-size: 2.4rem;
-	color: var(--black);
+	color: var(--offcolor);
 	font-family: 'Playfair Display SC', serif;
 	font-weight: 900;
 	letter-spacing: .5rem;
