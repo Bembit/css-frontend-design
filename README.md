@@ -1,86 +1,51 @@
-## CSS Designs
+## CSS Designs, UI Sketches, PS Designs, concepts and more.
 
-*I prefer layouts and colors. I used to just sit down and write some CSS because it's fun.*
+### Various designs, sketches and concepts from the past decade.
 
-*No hero images with helvetica here.*
-*<a href="https://github.com/Bembit/designs-photoshop">There are some in my old Photoshop repo.</a>*
+<div style="display:flex; flex-direction:row;"> 
 
-#### <a href="/design%20print%20layout%20in%20css">Print layout / Magazine style.</a>
-  - I really do love and miss quality print media.
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing11.png" width="100%">
-
-#### <a href="/design%20presentation%20slides">Presentation slide.</a>
-  - Make Powerpoint meetings great again! 
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing10.png" width="100%">
-
-<br>
-<div>
-  <img src="./zzz/rest/5.png" width="24%">
-  <img src="./zzz/rest/6.png" width="24%">
-  <img src="./zzz/rest/7.jpg" width="24%">
-  <img src="./zzz/rest/3.png" width="24%">
-</div>
-<br>
-
-#### <a href="/design%20various%20datingapp%20nsfw">Landing sketch.</a>
-  - Ahhh. Dating apps.. thanks for nothing.
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing14.png" width="100%">
-
-#### <a href="/design%20landing%20concept">Landing concept.</a>
-  - And some ui features.
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing22.png" width="100%">
-
-#### <a href="/design%20features%20section%20new">Features / Cards.</a>
-  - The only excuse to use emojis is to ditch libraries and downloadables for quick designs.
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing21.png" width="100%">
-
-#### <a href="/design%20features%20section%20new">About section idea.</a>
-  - Wish I used a better image.
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing1.png" width="100%">
-
-#### <a href="./sketches_and_practices_REST/">Just layouts, ideas.</a>
-<div>
-  <img src="./zzz/layouts/4.png" width="24%">
-  <img src="./zzz/layout.gif" width="24%">
-  <img src="./zzz/layouts/5.png" width="24%">
-  <img src="./zzz/layouts/7.png" width="24%">
+<div style="display:flex; flex-wrap:wrap; flex-direction:column; flex-basis:33%;">
+  <img src="./zimages/1.png" width="100%">
+  <img src="./zimages/3.png" width="100%">
+  <img src="./zimages/28.png" width="100%">
+  <img src="./zimages/4.png" width="100%">
+  <img src="./zimages/2.png" width="100%">
+  <img src="./zimages/5.png" width="100%">
+  <img src="./zimages/6.png" width="100%">
+  <img src="./zimages/7.png" width="100%">
+  <img src="./zimages/8.png" width="100%">
+  <img src="./zimages/36.gif" width="100%">
+  <img src="./zimages/9.png" width="100%">
+  <img src="./zimages/11.png" width="100%">
+  <img src="./zimages/12.png" width="100%">
 </div>
 
-#### <a href="/design%20features%20section%20new">Social / Cards.</a>
-  - Some social idea from whenever.
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing2.png" width="100%">
-
-#### <a href="/design%20features%20section%20new">Landing flexbox.</a>
-  - Flexbox bare landing. In 2017 it looked better than 98% of the hungarian web.
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing6.png" width="100%">
-
-#### <a href="/design%20features%20section%20new">Form API</a>
-  - Old APIs design, I just like it for some reason.
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing7.jpg" width="100%">
-
-#### <a href="/design%20features%20section%20new">Landing / Hero</a>
-  - PHP sites landing.
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing8.png" width="100%">
-
-#### <a href="/design%20features%20section%20new">Features.</a>
-  - Not using a #222+ bgcolor, Christ, what a missed opportunity.
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing12.png" width="100%">
-
-#### <a href="/design%20features%20section%20new">Spotify 2016 web player</a>
-  - My first try of CSS after I got back to it in 2016.
-  - Looking back at it, it was a solid 3.6 roentgen first try.
-<img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing15.png" width="100%">
-
-#### <a href="/design%20features%20section%20new">Some older CSS studies.</a>
-  - CSS study courses from 2016. 2 of many.
-<div>
-  <img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing19.jpg" width="48%">
-  <img src="https://github.com/Bembit/css-frontend-design/blob/main/zzz/landing20.jpg" width="48%">
+<div style="display:flex; flex-wrap:wrap; flex-direction:column; flex-basis:33%;">
+  <img src="./zimages/13.png" width="100%">
+  <img src="./zimages/14.png" width="100%">
+  <img src="./zimages/24.png" width="100%">
+  <img src="./zimages/37.gif" width="100%">
+  <img src="./zimages/15.png" width="100%">
+  <img src="./zimages/16.png" width="100%">
+  <img src="./zimages/17.png" width="100%">
+  <img src="./zimages/18.png" width="100%">
+  <img src="./zimages/19.png" width="100%">
+  <img src="./zimages/20.png" width="100%">
+  <img src="./zimages/21.png" width="100%">
 </div>
 
-#### <a href="https://github.com/Bembit/designs-photoshop">Photoshop repo.</a>
-  - PS repo, designs.
-<div>
-  <img src="https://github.com/Bembit/designs-photoshop/blob/main/design%20images%20only/4.png" width="48%">
-  <img src="https://github.com/Bembit/designs-photoshop/blob/main/design%20images%20only/1.png" width="48%">
+<div style="display:flex; flex-wrap:wrap; flex-direction:column; flex-basis:33%;">
+  <img src="./zimages/23.png" width="100%">
+  <img src="./zimages/22.png" width="100%">
+  <img src="./zimages/25.png" width="100%">
+  <img src="./zimages/30.png" width="100%">
+  <img src="./zimages/32.png" width="100%">
+  <img src="./zimages/29.png" width="100%">
+  <img src="./zimages/33.png" width="100%">
+  <img src="./zimages/34.png" width="100%">
+  <img src="./zimages/35.gif" width="100%">
+  <img src="./zimages/26.png" width="100%">
+  <img src="./zimages/27.png" width="100%">
+  <img src="./zimages/31.gif" width="100%">
+</div>
 </div>
